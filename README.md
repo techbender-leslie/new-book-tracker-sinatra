@@ -5,8 +5,7 @@
 
 <h3>The finished app is a fully functional inventory system that allows a user to add a new book with relevant details, include an image, a rating (if read), and track the location of the book, whether in the library or on loan to a named individual.</h3>
 
-![alt tag](http://i.imgur.com/CxQ8bOd.png)  
-![alt tag](http://i.imgur.com/HoiTYLu.png)
+![alt tag](http://i.imgur.com/CxQ8bOd.png)  ![alt tag](http://i.imgur.com/HoiTYLu.png)
 
 
 
