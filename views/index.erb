@@ -1,0 +1,65 @@
+  <div class="container" id="book-list">
+    <div class="table-responsive">
+      <table class="table table-hover">
+
+          <% @books.each do |book| %>
+          <tr>
+              <td class="col-sm-3 col-xs-4">
+              <a href="books/<%= book.id %>"><img src="<%= book.picture_url %>" id="small-pics" class='img-responsive img-thumbnail'/></a>
+              </td>
+
+              <td "col-sm-6 col-xs-6">
+              <div id="title">
+              <br>
+              <p>Title:<h2><b><%= book.title %></b></h2></p>
+              </div>
+
+              <div id="more-info">
+              <p>Author:<h3><%= book.author %></h3></p>
+              <br>
+              <p>Genre: <h4> <%= book.genre.capitalize %></h4></p>
+              <br>
+              <div class="delete-button">
+              <form action="/books/<%= book.id %>" method="post">
+              <input type="hidden" name="_method" value="delete">
+              <a href="books/<%= book.id %>" class="btn btn-info" role="button">More Info</a>&nbsp;
+              <a href="books/<%= book.id %>/edit" class="btn btn-warning" role="button">Edit Info</a>&nbsp;
+              <input class="btn btn-danger" type="submit" value="Delete Book">
+              </form>
+              </div>
+              <br>
+
+              </div>
+              </td>
+
+              <td class="col-sm-3 col-xs-2">
+              <div id="rating">
+              <p>MY RATING: (click to edit) </p>
+              <a href="books/<%= book.id %>/edit">
+              <h3><b>
+                <% if book.rating == nil %>
+                  <i>Not yet rated</i>
+                <% else %>
+                <% star = "★" %>
+                  <h1><%= star * book.rating %></h1>
+                  </b></h3>
+                <%end%>
+                </a>
+              </div>
+              </td>
+
+          </tr>
+        <% end %>
+
+      </table>
+    </div>
+  </div>
+
+
+<!-- ★★★★★
+★★★★☆
+★★★☆☆
+★★☆☆☆
+★☆☆☆☆ -->
+
+

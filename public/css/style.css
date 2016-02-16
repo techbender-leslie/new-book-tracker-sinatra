@@ -1,0 +1,118 @@
+body {
+  background-color: gold;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin-top: -10px;
+}
+
+h2 {
+  font-weight:bolder;
+}
+
+hr {
+  height: 1px;
+}
+
+#index-header {
+  font-size: 72px;
+  text-align: center;
+  /*font-weight: bold;*/
+  font-family: 'Cabin Sketch', cursive;
+  
+  padding-bottom: 10px;
+}
+
+#book-list {
+  background-color: white;
+  padding-top: 25px;
+}
+
+#small-pics {
+  width: auto;
+  height: 300px;
+}
+
+#more-info {
+ margin-bottom: 25px;
+}
+
+#rating {
+  margin-top: 25px;
+}
+
+#rating a:link {
+  text-decoration: none;
+  color: darkorange;
+}
+
+#rating a:hover {
+  color: black;
+}
+
+/* SHOW page begins here */
+
+#book-basics {
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+#book-basics-row {
+  background-color: white;
+  padding-top: 35px;
+}
+
+#book-pic {
+  width: auto;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+#book-rating {
+  padding-top: 10px;
+}
+
+#book-rating h1 {
+  font-size: 48px;
+  color: darkorange;
+}
+
+/*book title text*/
+#big-1 {
+  font-size: 56px;
+  padding: 5px;
+}
+
+/*book title container*/
+#book-title {  
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+}
+
+#book-availability {
+  width: 50%;
+  background-color: papayawhip;
+  padding: 5px;
+  margin-left: -5px;
+  margin-top: 25px;
+
+}
+
+#pic-box {
+  text-align: center;
+  margin-top: 15px;
+}
+
+blockquote {
+  padding-left: 15px;
+}
+
+#book-summary {
+  margin-top: 40px;
+  margin-left: 75px;
+}
+
+
+

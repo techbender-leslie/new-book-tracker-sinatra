@@ -1,0 +1,111 @@
+<br>
+<br>
+<div class="col-sm-10 col-sm-offset-1">
+  <div class= "well well-lg">
+    <h1><center> Edit this Book</center></h1>
+    <br>
+
+    <form action="/books/<%= @book.id %>/edit" method="post" role="form"class="form-horizontal">
+    <input type="hidden" name="_method" value="put" />
+
+      <div class="form-group">
+        <label for="book_title" class="col-sm-2 control-label">Title:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="book_title" name="book[title]" value= "<%= @book.title %>">
+        </div>
+      </div>
+
+    <div class="form-group">
+      <label for="book_author" class="col-sm-2 control-label">Author:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="book_author" name="book[author]" value= "<%= @book.author %>">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_rating" class="col-sm-2 control-label">Rating:</label>
+      <div class="col-sm-10">
+        <label class="radio-inline">
+        <input type="radio" name="book[rating]" id="book_rating_1" value=1> 1
+        </label>
+        <label class="radio-inline">
+        <input type="radio" name="book[rating]" id="book_rating_2" value=2> 2
+        </label>
+        <label class="radio-inline">
+        <input type="radio" name="book[rating]" id="book_rating_3" value=3> 3
+        </label>
+        <label class="radio-inline">
+        <input type="radio" name="book[rating]" id="book_rating_4" value=4> 4
+        </label>
+        <label class="radio-inline">
+        <input type="radio" name="book[rating]" id="book_rating_5" value=5> 5
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_picture_url" class="col-sm-2 control-label">Picture URL:</label>
+      <div class="col-sm-10">
+        <input type="url" class="form-control" name="book[picture_url]" id="book_picture_url" value= "<%= @book.picture_url %>">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_genre" class="col-sm-2 control-label">Genre:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="book[genre]" id="book_genre" value= "<%= @book.genre %>">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_format" class="col-sm-2 control-label">Format:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="book[format]" id="book_format" value= "<%= @book.format %>">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_release_year" class="col-sm-2 control-label">Release Year:</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="book[release_year]" id="book_release_year" value= "<%= @book.release_year %>">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_summary" class="col-sm-2 control-label">Summary:</label>
+      <div class="col-sm-10">
+        <textarea id="book_summary" name= "book[summary]" class="form-control"><%= @book.summary %> </textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_in_library" class="col-sm-2 control-label">In Library?</label>
+      <div class="col-sm-1">
+        <input type="checkbox" class="form-control" name= "book[in_library]" id="book_in_library">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="book_lent_to" class="col-sm-2 control-label">Borrowed by:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="book[lent_to]" id="book_lent_to" value= "<%= @book.lent_to %>">
+      </div>
+    </div>
+
+    <!-- <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label>
+            <h4><input type="checkbox">Currently Reading?</h4>
+          </label>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Add Book</button>
+      </div>
+    </div>
+
+  </form>

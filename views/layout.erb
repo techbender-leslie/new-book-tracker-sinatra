@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Leslie's Big Frank Book App</title>
+  </head>
+    <body >
+    <div class="container">
+        <br>
+        <hr>
+        <h1 id="index-header"><center><a href="/books/new" class="btn btn-success btn-lg" role="button">Add a Book &nbsp;<i class="fa fa-book"></i></span>
+        </a> &nbsp;My New Book Inventory &nbsp;<a href="/books" class="btn btn-primary btn-lg" role="button">All Books &nbsp; <i class="fa fa-university"></i></span></a></center></h1>
+        <hr>
+        <br>
+        <%= yield %>
+    </div>
+    </body>
+</html>
