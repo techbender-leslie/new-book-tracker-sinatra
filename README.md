@@ -16,6 +16,8 @@
     <li> Actually having both edit and delete working at the same time. This proved to be harder than I imagined </li>
     <li> Having a clean design and use of the Bootstrap horizontal form for the first time </li>
   </ul>
+  
+![alt tag](http://i.imgur.com/XAemZCj.png)
 
 
 
