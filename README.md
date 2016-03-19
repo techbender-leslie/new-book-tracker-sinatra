@@ -1,4 +1,4 @@
-<h2>My New Book Inventory</h2>
+<h2>Booker -The New Book Inventory App</h2>
 <h3>This app was created using Sinatra, Ruby, HTML and CSS. Each file and even the file system was individually created. The content was built from the ground up, from the gemfile to the Rakefile and every MVC component</h3>
 
 <p>The user story for the app is a personal one. I am an avid reader, and an even greater book connoisseur, so naturally I have a deep love of the Bay area bookstores. As much as I love walking out with a fresh stack of books to read, many only make it as far as my "new book table" in my house, which has become a beatiful collection of my new books to be read. Over time, I forget why a book appealed to me or even what it is about. I also lose track of which books I have already own in my library and which have been lent out to friends.</p>
